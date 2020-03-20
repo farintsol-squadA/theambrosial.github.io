@@ -145,7 +145,13 @@
 
 
 <script type="text/javascript">
-    function googleTranslateElementInit() {
+  
+
+function pagereload(){
+
+    window.location.reload(true);
+
+      function googleTranslateElementInit() {
       new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT}, 'google_translate_element');
     }
 
@@ -171,11 +177,6 @@
 	  location.reload();
 
 	});
-
-function pagereload(){
-
-    window.location.reload(true);
-     setcookie("googtrans", "/en/en", time()+3600, "/");
 } 
 
   </script>
