@@ -1391,7 +1391,6 @@ span.error:after {
 }
 
 .container_radio {
-    display: block;
     position: relative;
     font-size: 14px;
     font-size: 0.875rem;
