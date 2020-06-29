@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+<div class="col-md-7 well" id="task-list-container" style="background-color:#FCFCFC;">
+        <div class="" id="task-data"><div class="row">
+    <div class="col-md-7">
+        <h6>Showing <b>All 38</b> Task(s) of Accounting</h6>
+        <input type="hidden" id="result_for" value="ACCOUNTING">
+    </div>
+    <div class="col-sm-5">
+      <input type="text" id="searchInput" onkeyup="searchTaskN('taskTableN','searchInput',1)" placeholder="Search Customer...">
+    </div>
+
+</div> 
+
+<style>
+
+
+.checkbox label:after {
+  /* content: '';
+   display: table;
+   clear: both;*/
+   }
+   .checkbox .cr {
+   position: relative;
+   display: inline-block;
+   border: 1px solid #a9a9a9;
+   border-radius: .25em;
+   width: 1.3em;
+   height: 1.3em;
+   float: left;
+   /*margin-right: .5em;*/
+   }
+   .checkbox .cr .cr-icon {
+   position: absolute;
+   font-size: .8em;
+   line-height: 0;
+   top: 50%;
+   left: 15%;
+   }
+   .checkbox label input[type="checkbox"] {
+   display: none;
+   }
+   .checkbox label input[type="checkbox"]+.cr>.cr-icon {
+   opacity: 0;
+   }
+   .checkbox label input[type="checkbox"]:checked+.cr>.cr-icon {
+   opacity: 1;
+   }
+   .checkbox label input[type="checkbox"]:disabled+.cr {
+   opacity: .5;
+   }
+   
+   .not-active {
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+  color: black;
+}
+
+</style>
+<div class="tableFixHead" id="table_data">
+<table class="table table-hover table-condensed todo-table" style="table-layout:fixed;" id="taskTableN">
+<thead>
+    <tr><th width="2%"></th>
+    <th width="30%"></th>
+    <th width="27%">Status</th>
+    <th width="15%">Due date</th>
+    <!--<th width="15%">Hrs.</th>-->
+    <th width="20%">Progress</th>
+    <th width="8%"></th>
+</tr></thead>
+<tbody>
+                <script>
+                 $(function() {
+                    var datepickerSelector_startdate_billing0 = '.datepick0';
+                     $(datepickerSelector_startdate_billing0).each(function() {
+                    $(this).datepicker({
+                       showOtherMonths: true,
+                       selectOtherMonths: true,
+                       dateFormat: "dd M yy",
+                       minDate: '0',
+                       yearRange: '-1:+1'
+                    }).prev('.btn').on('click', function(e) {
+                       e && e.preventDefault();
+                       $(this).focus();
+                    });
+                    $("#due_date_0").on('change keyup paste', function() {
+                             var change_date = $("#due_date_0").val();
+                             $("#work_id").val(1003);
+                             $("#acc_task").val(90387);
+                             $("#acc_date").val(change_date);
+                             $("#end_date").val('2020-04-23');
+                             $("#current_date").html("23 Apr 2020");
+                             $("#new_date").html(change_date);
+                             $("#checkbox_label").html("Apply to all customers in ACCOUNTING for the month April - 20-21");
+                             $("#duedatechange-modal").modal({show:true});
+                             $("#main_form").removeClass("hidden");
+                       $("#button_date").removeClass("hidden"); 
+                       $("#success_msg").addClass("hidden");
+                                
+                       });
+                       });
+                    });
+                </script>
+        
+                <tr><th style="color:#495b79;" colspan="6"> 
+                              <span class="checkbox" style="margin:0px;padding:0px;margin-right:0px;">
+                              <label> 
+                                    <input type="checkbox" id="chk_4156_all" onclick="check_all('total_chk',this,'chk_4156-')">
+                                    <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                                </label>
+                            &nbsp;&nbsp;BIPIN SINGH<select style="width: 152px;padding: 3px;border: 1px solid #ccc;" class="pull-right custom-select" onchange="getTaskActions(&quot;BIPIN SINGH&quot;,4156,this.value,this);">
+                                <option value="">Action</option>
+                                  <option value="1">Re-assign</option><option value="2">Close Multiple task(s)</option><option value="5">Assign Reviewer</option><option value="3">Submit for review</option>
+                          </select><input type="hidden" id="tasks_4156" value=""></span></th>
+                          </tr>
+               <tr class="" id="90387" title="Accounting  2020 - 2021 ">
+                    <td class="">
+                                            </td>
+                                        <td style="padding-left:15px;">
+                                            <a href="javascript:void(0);" onclick="ViewTaskDetails(90387)" title="" style="color:#;text-decoration:none;white-space: nowrap; width: 150px; overflow: hidden;text-overflow: ellipsis;  display: block;">
+                        &nbsp;</a>
+                                        
+                                          
+                     <span class="text-muted"><span id="span_hrs_spent_90387">01.30</span> / 10.00 hrs.</span>                     <br><span class="text-muted">Assigned by:<br><span style="font-size: 11px;">Vaidehi Karn</span></span>                     
+                    
+                    </td>
+                    
+                    <td>
+                                                <ul style="padding-left:1px;" id="90387~1003">
+                            <li class="dropdown" style="list-style: none;">
+                                <a href="#" class="dropdown-toggle" title="Sr. Review Complete" style="white-space: nowrap; width: 150px; overflow: hidden;text-overflow: ellipsis;  display: block;" data-toggle="dropdown"><span id="90387_1003_a">Sr. Review Complete</span> <b class="caret"></b> </a>
+                                <ul class="dropdown-menu"><li><a onclick="fetch_select(this,286);">Pending From Client Side</a></li><li><a onclick="fetch_select(this,287);">Details Received but Work Not Started</a></li><li><a onclick="fetch_select(this,288);">Work In Progress</a></li><li><a onclick="fetch_select(this,289);">Task Under Review</a></li><li><a onclick="fetch_select(this,2132);">SOM STAUS</a></li><li><a onclick="fetch_select(this,290);">Pending Sr. Review</a></li><li><a onclick="fetch_select(this,291);">Sr. Review Complete</a></li><li><a onclick="fetch_select(this,292);">Task Complete</a></li><li><a onclick="fetch_select(this,293);">Task Billed</a></li><li><a onclick="fetch_select(this,294);">Payment Pending</a></li><li><a onclick="fetch_select(this,295);">Payment Received</a></li><li><a onclick="fetch_select(this,316);">Details Not Received (Work Not Started)</a></li></ul>                            </li>
+                        </ul>
+                        <span class="text-muted">Assigned on:<br><span style="font-size: 11px;">21 Apr 2020 12 03 PM</span></span>
+                    </td>
+                  
+                    <td style="text-color:;">
+                      23 Apr 2020                                            </td>
+                
+                    
+                    <td>
+                        <div class="progress progress-mini" style="width:40px;display:inline-block;margin: 0px 0px" id="progress_90387">
+                <div class="progress-bar three-sec-ease-in-out progress-bar-warning" aria-valuetransitiongoal="40" aria-valuenow="40" style="width: 40%;"></div>
+              </div>&nbsp;
+                            <br><span id="review_90387"></span>                    </td>
+                    <td class="">
+                        
+                        <span class="label bg-seagreen text-white">Closed</span>                        <br>
+                                          </td>
+                </tr>
+                                
+                            <script>
+                 $(function() {
+                    var datepickerSelector_startdate_billing1 = '.datepick1';
+                     $(datepickerSelector_startdate_billing1).each(function() {
+                    $(this).datepicker({
+                       showOtherMonths: true,
+                       selectOtherMonths: true,
+                       dateFormat: "dd M yy",
+                       minDate: '0',
+                       yearRange: '-1:+1'
+                    }).prev('.btn').on('click', function(e) {
+                       e && e.preventDefault();
+                       $(this).focus();
+                    });
+                    $("#due_date_1").on('change keyup paste', function() {
+                             var change_date = $("#due_date_1").val();
+                             $("#work_id").val(1003);
+                             $("#acc_task").val(84038);
+                             $("#acc_date").val(change_date);
+                             $("#end_date").val('1970-01-01');
+                             $("#current_date").html("01 Jan 1970");
+                             $("#new_date").html(change_date);
+                             $("#checkbox_label").html("Apply to all customers in ACCOUNTING for the month January - 20-21");
+                             $("#duedatechange-modal").modal({show:true});
+                             $("#main_form").removeClass("hidden");
+                       $("#button_date").removeClass("hidden"); 
+                       $("#success_msg").addClass("hidden");
+                                
+                       });
+                       });
+                    });
+                </script>
+        
+                
+               <tr class="" id="84038" title="Accounting">
+                    <td class="">
+                                            </td>
+                                        <td style="padding-left:15px;">
+                                            <a href="javascript:void(0);" onclick="ViewTaskDetails(84038)" title="Abhinav Sinha" style="color:#;text-decoration:none;white-space: nowrap; width: 150px; overflow: hidden;text-overflow: ellipsis;  display: block;">
+                        Abhinav Sinha&nbsp;</a>
+                                        
+                                          
+                     <span class="text-muted"><span id="span_hrs_spent_84038">0</span> / 2.00 hrs.</span>                     <br><span class="text-muted"></span>                     
+                    
+                    </td>
+                    
+                    <td>
+                                                <ul style="padding-left:1px;" id="84038~1003">
+                            <li class="dropdown" style="list-style: none;">
+                                <a href="#" class="dropdown-toggle" title="Pending From Client Side" style="white-space: nowrap; width: 150px; overflow: hidden;text-overflow: ellipsis;  display: block;" data-toggle="dropdown"><span id="84038_1003_a">Pending From Client Side</span> <b class="caret"></b> </a>
+                                <ul class="dropdown-menu"><li><a onclick="fetch_select(this,286);">Pending From Client Side</a></li><li><a onclick="fetch_select(this,287);">Details Received but Work Not Started</a></li><li><a onclick="fetch_select(this,288);">Work In Progress</a></li><li><a onclick="fetch_select(this,289);">Task Under Review</a></li><li><a onclick="fetch_select(this,2132);">SOM STAUS</a></li><li><a onclick="fetch_select(this,290);">Pending Sr. Review</a></li><li><a onclick="fetch_select(this,291);">Sr. Review Complete</a></li><li><a onclick="fetch_select(this,292);">Task Complete</a></li><li><a onclick="fetch_select(this,293);">Task Billed</a></li><li><a onclick="fetch_select(this,294);">Payment Pending</a></li><li><a onclick="fetch_select(this,295);">Payment Received</a></li><li><a onclick="fetch_select(this,316);">Details Not Received (Work Not Started)</a></li></ul>                            </li>
+                        </ul>
+                        <span class="text-muted">Assigned on:<br><span style="font-size: 11px;">02 Apr 2020 08 03 PM</span></span>
+                    </td>
+                  
+                    <td style="text-color:;">
+                      01 Jan 1970                        <br><span class="text-muted">Assigned for: <span style="font-size: 11px;"> 03 Apr (20-21)</span></span>                    </td>
+                
+                    
+                    <td>
+                        <div class="progress progress-mini" style="width:40px;display:inline-block;margin: 0px 0px" id="progress_84038">
+                <div class="progress-bar three-sec-ease-in-out progress-bar-danger" aria-valuetransitiongoal="0" aria-valuenow="0" style="width: 0%;"></div>
+              </div>&nbsp;
+                            <br><span id="review_84038"></span>                    </td>
+                    <td class="">
+                        
+                        <span class="label bg-seagreen text-white">Closed</span>                        <br>
+                                                <br><span class="text-white label label-primary" style="font-size: 11px;"><i class="fa fa-file-text-o"></i> 1</span>
+                        
+                                          </td>
+                </tr>
+                                
+                            <script>
+                 $(function() {
+                    var datepickerSelector_startdate_billing2 = '.datepick2';
+                     $(datepickerSelector_startdate_billing2).each(function() {
+                    $(this).datepicker({
+                       showOtherMonths: true,
+                       selectOtherMonths: true,
+                       dateFormat: "dd M yy",
+                       minDate: '0',
+                       yearRange: '-1:+1'
+                    }).prev('.btn').on('click', function(e) {
+                       e && e.preventDefault();
+                       $(this).focus();
+                    });
+                    $("#due_date_2").on('change keyup paste', function() {
+                             var change_date = $("#due_date_2").val();
+                             $("#work_id").val(1003);
+                             $("#acc_task").val(98080);
+                             $("#acc_date").val(change_date);
+                             $("#end_date").val('2020-07-03');
+                             $("#current_date").html("03 Jul 2020");
+                             $("#new_date").html(change_date);
+                             $("#checkbox_label").html("Apply to all customers in ACCOUNTING for the month July - 20-21");
+                             $("#duedatechange-modal").modal({show:true});
+                             $("#main_form").removeClass("hidden");
+                       $("#button_date").removeClass("hidden"); 
+                       $("#success_msg").addClass("hidden");
+                                
+                       });
+                       });
+                    });
+                </script>
+        
+                
+               <tr class="" id="98080" title="Accounting">
+                    <td class="">
+                                            </td>
+                                        <td style="padding-left:15px;">
+                                            <a href="javascript:void(0);" onclick="ViewTaskDetails(98080)" title="Abhinav Sinha" style="color:#;text-decoration:none;white-space: nowrap; width: 150px; overflow: hidden;text-overflow: ellipsis;  display: block;">
+                        Abhinav Sinha&nbsp;</a>
+                                        
+                                          
+                     <span class="text-muted"><span id="span_hrs_spent_98080">01.00</span> / 2.00 hrs.</span>                     <br><span class="text-muted"></span>                     
+                    
+                    </td>
+                    
+                    <td>
+                                                <ul style="padding-left:1px;" id="98080~1003">
+                            <li class="dropdown" style="list-style: none;">
+                                <a href="#" class="dropdown-toggle" title="Pending From Client Side" style="white-space: nowrap; width: 150px; overflow: hidden;text-overflow: ellipsis;  display: block;" data-toggle="dropdown"><span id="98080_1003_a">Pending From Client Side</span> <b class="caret"></b> </a>
+                                <ul class="dropdown-menu"><li><a onclick="fetch_select(this,286);">Pending From Client Side</a></li><li><a onclick="fetch_select(this,287);">Details Received but Work Not Started</a></li><li><a onclick="fetch_select(this,288);">Work In Progress</a></li><li><a onclick="fetch_select(this,289);">Task Under Review</a></li><li><a onclick="fetch_select(this,2132);">SOM STAUS</a></li><li><a onclick="fetch_select(this,290);">Pending Sr. Review</a></li><li><a onclick="fetch_select(this,291);">Sr. Review Complete</a></li><li><a onclick="fetch_select(this,292);">Task Complete</a></li><li><a onclick="fetch_select(this,293);">Task Billed</a></li><li><a onclick="fetch_select(this,294);">Payment Pending</a></li><li><a onclick="fetch_select(this,295);">Payment Received</a></li><li><a onclick="fetch_select(this,316);">Details Not Received (Work Not Started)</a></li></ul>                            </li>
+                        </ul>
+                        <span class="text-muted">Assigned on:<br><span style="font-size: 11px;">17 May 2020 12 27 PM</span></span>
+                    </td>
+                  
+                    <td style="text-color:;">
+                      03 Jul 2020                        <br><span class="text-muted">Assigned for: <span style="font-size: 11px;"> 03 Jul (20-21)</span></span>                    </td>
+                
+                    
+                    <td>
+                        <div class="progress progress-mini" style="width:40px;display:inline-block;margin: 0px 0px" id="progress_98080">
+                <div class="progress-bar three-sec-ease-in-out progress-bar-info" aria-valuetransitiongoal="53" aria-valuenow="53" style="width: 53%;"></div>
+              </div>&nbsp;
+                            <br><span id="review_98080"><br><span class="text-white label bg-success" style="font-size: 10px;">Closed </span></span>                    </td>
+                    <td class="">
+                        
+                        <span class="label bg-seagreen text-white">Closed</span>                        <br>
+                                                <br><span class="text-white label label-primary" style="font-size: 11px;"><i class="fa fa-file-text-o"></i> 1</span>
+                        
+                                          </td>
+                </tr>
+                                
+                            <script>
+                 $(function() {
+                    var datepickerSelector_startdate_billing3 = '.datepick3';
+                     $(datepickerSelector_startdate_billing3).each(function() {
+                    $(this).datepicker({
+                       showOtherMonths: true,
+                       selectOtherMonths: true,
+                       dateFormat: "dd M yy",
+                       minDate: '0',
+                       yearRange: '-1:+1'
+                    }).prev('.btn').on('click', function(e) {
+                       e && e.preventDefault();
+                       $(this).focus();
+                    });
+                    $("#due_date_3").on('change keyup paste', function() {
+                             var change_date = $("#due_date_3").val();
+                             $("#work_id").val(1003);
+                             $("#acc_task").val(84044);
+                             $("#acc_date").val(change_date);
+                             $("#end_date").val('1970-01-01');
+                             $("#current_date").html("01 Jan 1970");
+                             $("#new_date").html(change_date);
+                             $("#checkbox_label").html("Apply to all customers in ACCOUNTING for the month January - 20-21");
+                             $("#duedatechange-modal").modal({show:true});
+                             $("#main_form").removeClass("hidden");
+                       $("#button_date").removeClass("hidden"); 
+                       $("#success_msg").addClass("hidden");
+                                
+                       });
+                       });
+                    });
+                </script>
+        
+                
+               <tr class="" id="84044" title="Accounting">
+                    <td class="">
+                                            </td>
+                                        <td style="padding-left:15px;">
+                                            <a href="javascript:void(0);" onclick="ViewTaskDetails(84044)" title="AMIT CHAOUDHARY" style="color:#;text-decoration:none;white-space: nowrap; width: 150px; overflow: hidden;text-overflow: ellipsis;  display: block;">
+                        Amit Chaoudhary&nbsp;</a>
+                                        
+                                          
+                     <span class="text-muted"><span id="span_hrs_spent_84044">0</span> / 2.00 hrs.</span>                     <br><span class="text-muted"></span>                     
+                    
+                    </td>
+                    
+                    <td>
+                                                <ul style="padding-left:1px;" id="84044~1003">
+                            <li class="dropdown" style="list-style: none;">
+                                <a href="#" class="dropdown-toggle" title="No Updates" style="white-space: nowrap; width: 150px; overflow: hidden;text-overflow: ellipsis;  display: block;" data-toggle="dropdown"><span id="84044_1003_a">No Updates</span> <b class="caret"></b> </a>
+                                <ul class="dropdown-menu"><li><a onclick="fetch_select(this,286);">Pending From Client Side</a></li><li><a onclick="fetch_select(this,287);">Details Received but Work Not Started</a></li><li><a onclick="fetch_select(this,288);">Work In Progress</a></li><li><a onclick="fetch_select(this,289);">Task Under Review</a></li><li><a onclick="fetch_select(this,2132);">SOM STAUS</a></li><li><a onclick="fetch_select(this,290);">Pending Sr. Review</a></li><li><a onclick="fetch_select(this,291);">Sr. Review Complete</a></li><li><a onclick="fetch_select(this,292);">Task Complete</a></li><li><a onclick="fetch_select(this,293);">Task Billed</a></li><li><a onclick="fetch_select(this,294);">Payment Pending</a></li><li><a onclick="fetch_select(this,295);">Payment Received</a></li><li><a onclick="fetch_select(this,316);">Details Not Received (Work Not Started)</a></li></ul>                            </li>
+                        </ul>
+                        <span class="text-muted">Assigned on:<br><span style="font-size: 11px;">02 Apr 2020 08 03 PM</span></span>
+                    </td>
+                  
+                    <td style="text-color:;">
+                      01 Jan 1970                        <br><span class="text-muted">Assigned for: <span style="font-size: 11px;"> 03 Apr (20-21)</span></span>                    </td>
+                
+                    
+                    <td>
+                        <div class="progress progress-mini" style="width:40px;display:inline-block;margin: 0px 0px" id="progress_84044">
+                <div class="progress-bar three-sec-ease-in-out progress-bar-danger" aria-valuetransitiongoal="0" aria-valuenow="0" style="width: 0%;"></div>
+              </div>&nbsp;
+                            <br><span id="review_84044"></span>                    </td>
+                    <td class="">
+                        
+                        <span class="label bg-seagreen text-white">Closed</span>                        <br>
+                                          </td>
+                </tr>
+                                
+                            <script>
+                 $(function() {
+                    var datepickerSelector_startdate_billing4 = '.datepick4';
+                     $(datepickerSelector_startdate_billing4).each(function() {
+                    $(this).datepicker({
+                       showOtherMonths: true,
+                       selectOtherMonths: true,
+                       dateFormat: "dd M yy",
+                       minDate: '0',
+                       yearRange: '-1:+1'
+                    }).prev('.btn').on('click', function(e) {
+                       e && e.preventDefault();
+                       $(this).focus();
+                    });
+                    $("#due_date_4").on('change keyup paste', function() {
+                             var change_date = $("#due_date_4").val();
+                             $("#work_id").val(1003);
+                             $("#acc_task").val(92389);
+                             $("#acc_date").val(change_date);
+                             $("#end_date").val('2020-06-03');
+                             $("#current_date").html("03 Jun 2020");
+                             $("#new_date").html(change_date);
+                             $("#checkbox_label").html("Apply to all customers in ACCOUNTING for the month June - 20-21");
+                             $("#duedatechange-modal").modal({show:true});
+                             $("#main_form").removeClass("hidden");
+                       $("#button_date").removeClass("hidden"); 
+                       $("#success_msg").addClass("hidden");
+                                
+                       });
+                       });
+                    });
+                </script>
+        
+
+
+                
+               <tr class="" id="89331" title="Accounting">
+                    <td class="">
+                              
+                                <span class="checkbox" style="margin:0px;padding:0px;margin-right:0px;">
+                                    <label>
+                                        <input type="checkbox" id="chk_4150-38" name="chk_4150-38" value="89331">  
+                                        <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                                    </label>
+                                </span>    
+                                                </td>
+                                        <td style="padding-left:15px;">
+                                            <a href="javascript:void(0);" onclick="ViewTaskDetails(89331)" title="Kiran T" style="color:#8B0000 ;text-decoration:none;white-space: nowrap; width: 150px; overflow: hidden;text-overflow: ellipsis;  display: block;">
+                        Kiran T&nbsp;</a>
+                                        
+                                          
+                     <span class="text-muted"><span id="span_hrs_spent_89331">0</span> / 2.00 hrs.</span>                     <br><span class="text-muted"></span>                     
+                    
+                    </td>
+                    
+                    <td>
+                                                <ul style="padding-left:1px;" id="89331~1003">
+                            <li class="dropdown" style="list-style: none;">
+                                <a href="#" class="dropdown-toggle" title="No Updates" style="white-space: nowrap; width: 150px; overflow: hidden;text-overflow: ellipsis;  display: block;" data-toggle="dropdown"><span id="89331_1003_a">No Updates</span> <b class="caret"></b> </a>
+                                <ul class="dropdown-menu"><li><a onclick="fetch_select(this,286);">Pending From Client Side</a></li><li><a onclick="fetch_select(this,287);">Details Received but Work Not Started</a></li><li><a onclick="fetch_select(this,288);">Work In Progress</a></li><li><a onclick="fetch_select(this,289);">Task Under Review</a></li><li><a onclick="fetch_select(this,2132);">SOM STAUS</a></li><li><a onclick="fetch_select(this,290);">Pending Sr. Review</a></li><li><a onclick="fetch_select(this,291);">Sr. Review Complete</a></li><li><a onclick="fetch_select(this,292);">Task Complete</a></li><li><a onclick="fetch_select(this,293);">Task Billed</a></li><li><a onclick="fetch_select(this,294);">Payment Pending</a></li><li><a onclick="fetch_select(this,295);">Payment Received</a></li><li><a onclick="fetch_select(this,316);">Details Not Received (Work Not Started)</a></li></ul>                            </li>
+                        </ul>
+                        <span class="text-muted">Assigned on:<br><span style="font-size: 11px;">14 Apr 2020 01 59 PM</span></span>
+                    </td>
+                  
+                    <td style="text-color:8B0000 ;">
+                                                      <input style="margin-bottom: 10px;" type="text" class="datepick37 input_class work hasDatepicker" id="due_date_37" value="05 May 2020">
+                                                    <br><span class="text-muted">Assigned for: <span style="font-size: 11px;"> 03 May (20-21)</span></span>                    </td>
+                
+                    
+                    <td>
+                        <div class="progress progress-mini" style="width:40px;display:inline-block;margin: 0px 0px" id="progress_89331">
+                <div class="progress-bar three-sec-ease-in-out progress-bar-danger" aria-valuetransitiongoal="0" aria-valuenow="0" style="width: 0%;"></div>
+              </div>&nbsp;
+                                <a class="btn btn-default active btn-xs btn-animate-demo" style="margin-top: 0px;" onclick="getTaskChecklikstData(89331)">Update</a>
+                            <br><span id="review_89331"></span>                    </td>
+                    <td class="">
+                        
+                                                            <a class="btn btn-default active btn-xs btn-animate-demo" style="margin-top: 0px;" id="89331" onclick="closeTaskN(89331)">Close</a>
+                                                        <br>
+                                          </td>
+                </tr>
+                                
+                      <input type="hidden" id="total_chk" value="38">
+          <input type="hidden" id="selected_tasks" value="">
+    </tbody>
+ </table>
+</div>
+
+
+</div>
+    </div>
+</body>
+</html>

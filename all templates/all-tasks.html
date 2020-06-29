@@ -1,0 +1,1319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Responsive Web UI Kit &amp; Dashboard Template based on Bootstrap">
+	<meta name="author" content="AdminKit">
+	<meta name="keywords" content="adminkit, bootstrap, web ui kit, dashboard template, admin template">
+
+	<link rel="shortcut icon" href="img/icons/icon-48x48.png" />
+
+	<title>All Tasks</title>
+
+	<link href="css/app.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="wrapper">
+		<nav id="sidebar" class="sidebar">
+			<div class="sidebar-content js-simplebar">
+				<a class="sidebar-brand" href="index.html">
+          <span class="align-middle" style="	color: #6c757d;">OM Trade Links</span>
+        </a>
+				<ul class="sidebar-nav">
+					<li class="sidebar-header">
+						Pages
+					</li>
+					<li class="sidebar-item active">
+						<a class="sidebar-link" href="index.html">
+              <i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Dashboard</span>
+            </a>
+					</li>
+					<li class="sidebar-item">
+						<a href="#ui" data-toggle="collapse" class="sidebar-link collapsed">
+              <i class="align-middle" data-feather="briefcase"></i> <span class="align-middle">Employee Section</span>
+            </a>
+						<ul id="ui" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
+							<li class="sidebar-item"><a class="sidebar-link" href="add_client.html">Add Employee</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="add_list.html">View/Update Employee</a></li>
+						</ul>
+					</li>
+															<li class="sidebar-item">
+						<a href="#ui2" data-toggle="collapse" class="sidebar-link collapsed">
+              <i class="align-middle" data-feather="briefcase"></i> <span class="align-middle">Manage Expense</span>
+            </a>
+						<ul id="ui2" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
+							<li class="sidebar-item"><a class="sidebar-link" href="expense-voucher.html">Expense Voucher</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="expense-logs.html">Expense Log</a></li>
+		
+						</ul>
+					</li>
+															<li class="sidebar-item">
+						<a href="data-sheet.html" data-toggle="" class="sidebar-link collapsed">
+              <i class="align-middle" data-feather="briefcase"></i> <span class="align-middle">Datasheet</span>
+            </a>
+					</li>
+															<li class="sidebar-item">
+						<a href="#ui3" data-toggle="collapse" class="sidebar-link collapsed">
+              <i class="align-middle" data-feather="briefcase"></i> <span class="align-middle">Task Manager</span>
+            </a>
+						<ul id="ui3" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
+							<li class="sidebar-item"><a class="sidebar-link" href="all-tasks.html">All Task</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="review-tasks.html">Review Task</a></li>
+		
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="main">
+			<nav class="navbar navbar-expand navbar-light navbar-bg">
+				<a class="sidebar-toggle d-flex">
+          <i class="hamburger align-self-center"></i>
+        </a>
+
+				<form class="form-inline d-none d-sm-inline-block">
+					<div class="input-group input-group-navbar">
+						<input type="text" class="form-control" placeholder="Search…" aria-label="Search">
+						<div class="input-group-append">
+							<button class="btn" type="button">
+                <i class="align-middle" data-feather="search"></i>
+              </button>
+						</div>
+					</div>
+				</form>
+
+				<div class="navbar-collapse collapse">
+					<ul class="navbar-nav navbar-align">
+						<li class="nav-item dropdown">
+							<a class="nav-icon dropdown-toggle" href="#" id="alertsDropdown" data-toggle="dropdown">
+								<div class="position-relative">
+									<i class="align-middle" data-feather="bell"></i>
+									<span class="indicator">4</span>
+								</div>
+							</a>
+							<div class="dropdown-menu dropdown-menu-lg dropdown-menu-right py-0" aria-labelledby="alertsDropdown">
+								<div class="dropdown-menu-header">
+									4 New Notifications
+								</div>
+								<div class="list-group">
+									<a href="#" class="list-group-item">
+										<div class="row no-gutters align-items-center">
+											<div class="col-2">
+												<i class="text-danger" data-feather="alert-circle"></i>
+											</div>
+											<div class="col-10">
+												<div class="text-dark">Update completed</div>
+												<div class="text-muted small mt-1">Restart server 12 to complete the update.</div>
+												<div class="text-muted small mt-1">30m ago</div>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="list-group-item">
+										<div class="row no-gutters align-items-center">
+											<div class="col-2">
+												<i class="text-warning" data-feather="bell"></i>
+											</div>
+											<div class="col-10">
+												<div class="text-dark">Lorem ipsum</div>
+												<div class="text-muted small mt-1">Aliquam ex eros, imperdiet vulputate hendrerit et.</div>
+												<div class="text-muted small mt-1">2h ago</div>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="list-group-item">
+										<div class="row no-gutters align-items-center">
+											<div class="col-2">
+												<i class="text-primary" data-feather="home"></i>
+											</div>
+											<div class="col-10">
+												<div class="text-dark">Login from 192.186.1.8</div>
+												<div class="text-muted small mt-1">5h ago</div>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="list-group-item">
+										<div class="row no-gutters align-items-center">
+											<div class="col-2">
+												<i class="text-success" data-feather="user-plus"></i>
+											</div>
+											<div class="col-10">
+												<div class="text-dark">New connection</div>
+												<div class="text-muted small mt-1">Christina accepted your request.</div>
+												<div class="text-muted small mt-1">14h ago</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="dropdown-menu-footer">
+									<a href="#" class="text-muted">Show all notifications</a>
+								</div>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-icon dropdown-toggle" href="#" id="messagesDropdown" data-toggle="dropdown">
+								<div class="position-relative">
+									<i class="align-middle" data-feather="message-square"></i>
+								</div>
+							</a>
+							<div class="dropdown-menu dropdown-menu-lg dropdown-menu-right py-0" aria-labelledby="messagesDropdown">
+								<div class="dropdown-menu-header">
+									<div class="position-relative">
+										4 New Messages
+									</div>
+								</div>
+								<div class="list-group">
+									<a href="#" class="list-group-item">
+										<div class="row no-gutters align-items-center">
+											<div class="col-2">
+												<img src="img/avatars/avatar-5.jpg" class="avatar img-fluid rounded-circle" alt="Vanessa Tucker">
+											</div>
+											<div class="col-10 pl-2">
+												<div class="text-dark">Vanessa Tucker</div>
+												<div class="text-muted small mt-1">Nam pretium turpis et arcu. Duis arcu tortor.</div>
+												<div class="text-muted small mt-1">15m ago</div>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="list-group-item">
+										<div class="row no-gutters align-items-center">
+											<div class="col-2">
+												<img src="img/avatars/avatar-2.jpg" class="avatar img-fluid rounded-circle" alt="William Harris">
+											</div>
+											<div class="col-10 pl-2">
+												<div class="text-dark">William Harris</div>
+												<div class="text-muted small mt-1">Curabitur ligula sapien euismod vitae.</div>
+												<div class="text-muted small mt-1">2h ago</div>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="list-group-item">
+										<div class="row no-gutters align-items-center">
+											<div class="col-2">
+												<img src="img/avatars/avatar-4.jpg" class="avatar img-fluid rounded-circle" alt="Christina Mason">
+											</div>
+											<div class="col-10 pl-2">
+												<div class="text-dark">Christina Mason</div>
+												<div class="text-muted small mt-1">Pellentesque auctor neque nec urna.</div>
+												<div class="text-muted small mt-1">4h ago</div>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="list-group-item">
+										<div class="row no-gutters align-items-center">
+											<div class="col-2">
+												<img src="img/avatars/avatar-3.jpg" class="avatar img-fluid rounded-circle" alt="Sharon Lessman">
+											</div>
+											<div class="col-10 pl-2">
+												<div class="text-dark">Sharon Lessman</div>
+												<div class="text-muted small mt-1">Aenean tellus metus, bibendum sed, posuere ac, mattis non.</div>
+												<div class="text-muted small mt-1">5h ago</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="dropdown-menu-footer">
+									<a href="#" class="text-muted">Show all messages</a>
+								</div>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-icon dropdown-toggle d-inline-block d-sm-none" href="#" data-toggle="dropdown">
+                <i class="align-middle" data-feather="settings"></i>
+              </a>
+
+							<a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" data-toggle="dropdown">
+                <img src="img/avatars/avatar.jpg" class="avatar img-fluid rounded mr-1" alt="Charles Hall" /> <span class="text-dark">Dhruval</span>
+              </a>
+							<div class="dropdown-menu dropdown-menu-right">
+								<a class="dropdown-item" href="pages-profile.html"><i class="align-middle mr-1" data-feather="user"></i> Profile</a>
+								<a class="dropdown-item" href="#"><i class="align-middle mr-1" data-feather="pie-chart"></i> Analytics</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="pages-settings.html"><i class="align-middle mr-1" data-feather="settings"></i> Settings & Privacy</a>
+								<a class="dropdown-item" href="#"><i class="align-middle mr-1" data-feather="help-circle"></i> Help Center</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#">Log out</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+
+			<main class="content">
+				<div class="container-fluid p-0">
+
+					<div class="row mb-2 mb-xl-3">
+						<div class="col-auto d-none d-sm-block">
+							<h3><strong> Task  </strong> List</h3>
+						</div>
+
+						<div class="col-auto ml-auto text-right mt-n1">
+							<nav aria-label="breadcrumb">
+								<ol class="breadcrumb bg-transparent p-0 mt-1 mb-0">
+									<li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+									<li class="breadcrumb-item active" aria-current="page"> Task List
+</li>
+								</ol>
+							</nav>
+						</div>
+					</div>		
+
+<div class="card">
+<div class="card-body">
+	
+
+								<div class="row mb-2 mb-xl-3">
+						<div class="col-auto d-none d-sm-block">
+
+
+							<div class="row">
+								<div class="col-12 col-xl-12">
+								<select class="custom-select mb-3">
+						          <option selected>Filter By Resource</option>
+						          <option>One</option>
+						          <option>Two</option>
+						          <option>Three</option>
+						        </select>
+								</div>
+							</div>
+						</div>
+
+												<div class="col-auto d-none d-sm-block">
+
+
+							<div class="row">
+								<div class="col-12 col-xl-12">
+								<select class="custom-select mb-3">
+						          <option selected>Filter By Customer</option>
+						          <option>One</option>
+						          <option>Two</option>
+						          <option>Three</option>
+						        </select>
+								</div>
+							</div>
+						</div>
+
+
+												<div class="col-auto d-none d-sm-block">
+
+
+							<div class="row">
+								<div class="col-12 col-xl-12">
+								<select class="custom-select mb-3">
+						          <option selected>Filter By Status</option>
+						          <option>One</option>
+						          <option>Two</option>
+						          <option>Three</option>
+						        </select>
+								</div>
+							</div>
+						</div>
+
+												<div class="col-auto d-none d-sm-block">
+
+
+							<div class="row">
+								<div class="col-12 col-xl-12">
+								<select class="custom-select mb-3">
+						          <option selected>Filter By Due Month</option>
+						          <option>One</option>
+						          <option>Two</option>
+						          <option>Three</option>
+						        </select>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-auto ml-auto text-right mt-n1">
+												<button class="btn btn-warning">My Review Board</button>
+												<a href="create_new_task.html"><button class="btn btn-success">+ New Task</button></a>
+
+						</div>
+					</div>
+
+					<div class="row mb-2 mb-xl-3">
+						<div class="col-auto d-none d-sm-block">
+							<label class="custom-control custom-checkbox">
+					          <input type="checkbox" class="custom-control-input">
+					          <span class="custom-control-label"> INCLUDE ALL PLANNED TASK(S) IN WIP </span>
+					        </label>
+						</div>
+
+						<div class="col-auto d-none d-sm-block">
+							<label class="custom-control custom-checkbox">
+					          <input type="checkbox" class="custom-control-input">
+					          <span class="custom-control-label">EXCLUDE COMPLETED TASK</span>
+					        </label>
+						</div>
+
+												<div class="col-auto ml-auto text-right mt-n1">
+												<button class="btn btn-primary">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-download align-middle mr-2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+
+												Export</button>
+
+						</div>
+
+					</div>
+
+					<style type="text/css">
+						.table td, .table th {
+						    padding: .25rem;
+						    vertical-align: top;
+						    border-top: 1px solid #dee2e6;
+						}
+					</style>
+
+<div class="row">
+							<div class="col-6">
+							<div class="card">
+					
+								<div class="table-responsive">
+									<table class="table table-condensed table-bordered" style="font-size: 12px;">
+            <thead>
+              <tr>
+                <td>
+                    <ul style="padding-left: 10px;margin-bottom: 0px;font-size:13px;" class="">
+                      <li class="dropdown" style="list-style: none;"> 
+                      	<a href="#" class="dropdown-toggle" style="white-space: nowrap; width: 150px; overflow: hidden;text-overflow: ellipsis;  display: block;" data-toggle="dropdown"><span>Workcategory View</span> <b class="caret"></b> </a>
+                        <ul class="dropdown-menu">
+                          <li>One</li>
+                          <li>Two</li>
+                        </ul>
+                      </li>
+                    </ul>
+                </td> 
+                <th colspan="4" style="background-color:#023E62;color:#fff;text-align:center;">Task(s)</th>
+                
+              </tr>
+              <tr>
+                <th style="width: 45%;background-color:#023E62;color:#fff;text-align:center;"></th>
+                <th style="width: 15%;background-color:#023E62;color:#fff;text-align:center;">WIP</th>
+                <th style="width: 15%;background-color:#023E62;color:#fff;text-align:center;">Overdue</th>
+                <th style="width: 15%;background-color:#023E62;color:#fff;text-align:center;">Completed</th>
+                <th style="width: 15%;background-color:#023E62;color:#fff;text-align:center;">Total</th>
+              </tr>
+            </thead>
+            <tbody>
+            <tr><th colspan="5">Accounting</th></tr><tr>
+                                <td id="1003_title" style="padding-left:15px;padding-right:15px;">Accounting</td>
+                                <td id="1003_wip" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,1003,'wip','Accounting','146b5dae12284acb165c37a9e39cd9753cbc537e')">10</span></td>
+                                <td id="1003_overdue" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,1003,'overdue','Accounting','146b5dae12284acb165c37a9e39cd9753cbc537e')">11</span></td>
+                                <td id="1003_completed" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,1003,'completed','Accounting','146b5dae12284acb165c37a9e39cd9753cbc537e')">17</span></td>
+                                <td id="1003_all" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(2, 62, 98); color: rgb(255, 255, 255);" class="data_cell"><span onclick="getTaskListN(this,1003,'all','Accounting','146b5dae12284acb165c37a9e39cd9753cbc537e')">38</span></td>
+                              </tr><tr>
+                            <td id="1004_title" style="padding-left:15px;">Monthly Accounting</td>
+                            <td id="1004_wip" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,1004,'wip','Monthly+Accounting','146b5dae12284acb165c37a9e39cd9753cbc537e')">1</span></td>
+                            <td id="1004_overdue" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,1004,'overdue','Monthly+Accounting','146b5dae12284acb165c37a9e39cd9753cbc537e')">8</span></td>
+                            <td id="1004_completed" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,1004,'completed','Monthly+Accounting','146b5dae12284acb165c37a9e39cd9753cbc537e')">1</span></td>
+                            <td id="1004_all" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,1004,'all','Monthly+Accounting','146b5dae12284acb165c37a9e39cd9753cbc537e')">10</span></td>
+                          </tr><tr><th colspan="5">CMA Data</th></tr><tr>
+                                <td id="9947_title" style="padding-left:15px;padding-right:15px;">Project Report</td>
+                                <td id="9947_wip" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,9947,'wip','Project+Report','146b5dae12284acb165c37a9e39cd9753cbc537e')">0</span></td>
+                                <td id="9947_overdue" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,9947,'overdue','Project+Report','146b5dae12284acb165c37a9e39cd9753cbc537e')">1</span></td>
+                                <td id="9947_completed" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,9947,'completed','Project+Report','146b5dae12284acb165c37a9e39cd9753cbc537e')">0</span></td>
+                                <td id="9947_all" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,9947,'all','Project+Report','146b5dae12284acb165c37a9e39cd9753cbc537e')">1</span></td>
+                              </tr><tr><th colspan="5">Company Law</th></tr><tr>
+                                <td id="990_title" style="padding-left:15px;padding-right:15px;">Increase In Paid Up Capital By Way Of Right Issue</td>
+                                <td id="990_wip" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,990,'wip','Increase+In+Paid+Up+Capital+By+Way+Of+Right+Issue','146b5dae12284acb165c37a9e39cd9753cbc537e')">1</span></td>
+                                <td id="990_overdue" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,990,'overdue','Increase+In+Paid+Up+Capital+By+Way+Of+Right+Issue','146b5dae12284acb165c37a9e39cd9753cbc537e')">2</span></td>
+                                <td id="990_completed" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,990,'completed','Increase+In+Paid+Up+Capital+By+Way+Of+Right+Issue','146b5dae12284acb165c37a9e39cd9753cbc537e')">0</span></td>
+                                <td id="990_all" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,990,'all','Increase+In+Paid+Up+Capital+By+Way+Of+Right+Issue','146b5dae12284acb165c37a9e39cd9753cbc537e')">3</span></td>
+                              </tr><tr>
+                            <td id="992_title" style="padding-left:15px;">Appointment Of Director</td>
+                            <td id="992_wip" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,992,'wip','Appointment+Of+Director','146b5dae12284acb165c37a9e39cd9753cbc537e')">0</span></td>
+                            <td id="992_overdue" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,992,'overdue','Appointment+Of+Director','146b5dae12284acb165c37a9e39cd9753cbc537e')">1</span></td>
+                            <td id="992_completed" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,992,'completed','Appointment+Of+Director','146b5dae12284acb165c37a9e39cd9753cbc537e')">0</span></td>
+                            <td id="992_all" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,992,'all','Appointment+Of+Director','146b5dae12284acb165c37a9e39cd9753cbc537e')">1</span></td>
+                          </tr><tr>
+                            <td id="983_title" style="padding-left:15px;">Annual Return File</td>
+                            <td id="983_wip" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,983,'wip','Annual+Return+File','146b5dae12284acb165c37a9e39cd9753cbc537e')">0</span></td>
+                            <td id="983_overdue" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,983,'overdue','Annual+Return+File','146b5dae12284acb165c37a9e39cd9753cbc537e')">7</span></td>
+                            <td id="983_completed" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,983,'completed','Annual+Return+File','146b5dae12284acb165c37a9e39cd9753cbc537e')">0</span></td>
+                            <td id="983_all" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,983,'all','Annual+Return+File','146b5dae12284acb165c37a9e39cd9753cbc537e')">7</span></td>
+                          </tr><tr>
+                            <td id="988_title" style="padding-left:15px;">Din Application</td>
+                            <td id="988_wip" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,988,'wip','Din+Application','146b5dae12284acb165c37a9e39cd9753cbc537e')">0</span></td>
+                            <td id="988_overdue" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,988,'overdue','Din+Application','146b5dae12284acb165c37a9e39cd9753cbc537e')">0</span></td>
+                            <td id="988_completed" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,988,'completed','Din+Application','146b5dae12284acb165c37a9e39cd9753cbc537e')">2</span></td>
+                            <td id="988_all" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,988,'all','Din+Application','146b5dae12284acb165c37a9e39cd9753cbc537e')">2</span></td>
+                          </tr><tr>
+                            <td id="994_title" style="padding-left:15px;">Transfer Of Shares</td>
+                            <td id="994_wip" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,994,'wip','Transfer+Of+Shares','146b5dae12284acb165c37a9e39cd9753cbc537e')">0</span></td>
+                            <td id="994_overdue" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,994,'overdue','Transfer+Of+Shares','146b5dae12284acb165c37a9e39cd9753cbc537e')">0</span></td>
+                            <td id="994_completed" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,994,'completed','Transfer+Of+Shares','146b5dae12284acb165c37a9e39cd9753cbc537e')">1</span></td>
+                            <td id="994_all" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,994,'all','Transfer+Of+Shares','146b5dae12284acb165c37a9e39cd9753cbc537e')">1</span></td>
+                          </tr><tr>
+                            <td id="984_title" style="padding-left:15px;">Company Formation</td>
+                            <td id="984_wip" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,984,'wip','Company+Formation','146b5dae12284acb165c37a9e39cd9753cbc537e')">0</span></td>
+                            <td id="984_overdue" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,984,'overdue','Company+Formation','146b5dae12284acb165c37a9e39cd9753cbc537e')">1</span></td>
+                            <td id="984_completed" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,984,'completed','Company+Formation','146b5dae12284acb165c37a9e39cd9753cbc537e')">1</span></td>
+                            <td id="984_all" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,984,'all','Company+Formation','146b5dae12284acb165c37a9e39cd9753cbc537e')">2</span></td>
+                          </tr><tr>
+                            <td id="10490_title" style="padding-left:15px;">Auditor Resignation</td>
+                            <td id="10490_wip" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,10490,'wip','Auditor+Resignation','146b5dae12284acb165c37a9e39cd9753cbc537e')">0</span></td>
+                            <td id="10490_overdue" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,10490,'overdue','Auditor+Resignation','146b5dae12284acb165c37a9e39cd9753cbc537e')">1</span></td>
+                            <td id="10490_completed" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,10490,'completed','Auditor+Resignation','146b5dae12284acb165c37a9e39cd9753cbc537e')">0</span></td>
+                            <td id="10490_all" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,10490,'all','Auditor+Resignation','146b5dae12284acb165c37a9e39cd9753cbc537e')">1</span></td>
+                          </tr><tr>
+                            <td id="997_title" style="padding-left:15px;">Minutes_2014-15</td>
+                            <td id="997_wip" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,997,'wip','Minutes_2014-15','146b5dae12284acb165c37a9e39cd9753cbc537e')">0</span></td>
+                            <td id="997_overdue" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,997,'overdue','Minutes_2014-15','146b5dae12284acb165c37a9e39cd9753cbc537e')">1</span></td>
+                            <td id="997_completed" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,997,'completed','Minutes_2014-15','146b5dae12284acb165c37a9e39cd9753cbc537e')">0</span></td>
+                            <td id="997_all" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,997,'all','Minutes_2014-15','146b5dae12284acb165c37a9e39cd9753cbc537e')">1</span></td>
+                          </tr><tr>
+                            <td id="985_title" style="padding-left:15px;">Change Registered</td>
+                            <td id="985_wip" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,985,'wip','Change+Registered','146b5dae12284acb165c37a9e39cd9753cbc537e')">0</span></td>
+                            <td id="985_overdue" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,985,'overdue','Change+Registered','146b5dae12284acb165c37a9e39cd9753cbc537e')">1</span></td>
+                            <td id="985_completed" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,985,'completed','Change+Registered','146b5dae12284acb165c37a9e39cd9753cbc537e')">0</span></td>
+                            <td id="985_all" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,985,'all','Change+Registered','146b5dae12284acb165c37a9e39cd9753cbc537e')">1</span></td>
+                          </tr><tr>
+                            <td id="991_title" style="padding-left:15px;">Allotment Of Shares By Private Placement</td>
+                            <td id="991_wip" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,991,'wip','Allotment+Of+Shares+By+Private+Placement','146b5dae12284acb165c37a9e39cd9753cbc537e')">0</span></td>
+                            <td id="991_overdue" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,991,'overdue','Allotment+Of+Shares+By+Private+Placement','146b5dae12284acb165c37a9e39cd9753cbc537e')">1</span></td>
+                            <td id="991_completed" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,991,'completed','Allotment+Of+Shares+By+Private+Placement','146b5dae12284acb165c37a9e39cd9753cbc537e')">0</span></td>
+                            <td id="991_all" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,991,'all','Allotment+Of+Shares+By+Private+Placement','146b5dae12284acb165c37a9e39cd9753cbc537e')">1</span></td>
+                          </tr><tr>
+                            <td id="986_title" style="padding-left:15px;">Increased In Authorised Capita</td>
+                            <td id="986_wip" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,986,'wip','Increased+In+Authorised+Capita','146b5dae12284acb165c37a9e39cd9753cbc537e')">0</span></td>
+                            <td id="986_overdue" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,986,'overdue','Increased+In+Authorised+Capita','146b5dae12284acb165c37a9e39cd9753cbc537e')">4</span></td>
+                            <td id="986_completed" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,986,'completed','Increased+In+Authorised+Capita','146b5dae12284acb165c37a9e39cd9753cbc537e')">0</span></td>
+                            <td id="986_all" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,986,'all','Increased+In+Authorised+Capita','146b5dae12284acb165c37a9e39cd9753cbc537e')">4</span></td>
+                          </tr><tr>
+                            <td id="10508_title" style="padding-left:15px;">Board Meeting Of Listed Company</td>
+                            <td id="10508_wip" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,10508,'wip','Board+Meeting+Of+Listed+Company','146b5dae12284acb165c37a9e39cd9753cbc537e')">0</span></td>
+                            <td id="10508_overdue" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,10508,'overdue','Board+Meeting+Of+Listed+Company','146b5dae12284acb165c37a9e39cd9753cbc537e')">1</span></td>
+                            <td id="10508_completed" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,10508,'completed','Board+Meeting+Of+Listed+Company','146b5dae12284acb165c37a9e39cd9753cbc537e')">0</span></td>
+                            <td id="10508_all" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,10508,'all','Board+Meeting+Of+Listed+Company','146b5dae12284acb165c37a9e39cd9753cbc537e')">1</span></td>
+                          </tr><tr><th colspan="5">GST</th></tr><tr>
+                                <td id="2785_title" style="padding-left:15px;padding-right:15px;">Gst Return Form Filing 3b</td>
+                                <td id="2785_wip" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,2785,'wip','Gst+Return+Form+Filing+3b','146b5dae12284acb165c37a9e39cd9753cbc537e')">224</span></td>
+                                <td id="2785_overdue" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,2785,'overdue','Gst+Return+Form+Filing+3b','146b5dae12284acb165c37a9e39cd9753cbc537e')">43</span></td>
+                                <td id="2785_completed" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,2785,'completed','Gst+Return+Form+Filing+3b','146b5dae12284acb165c37a9e39cd9753cbc537e')">22</span></td>
+                                <td id="2785_all" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,2785,'all','Gst+Return+Form+Filing+3b','146b5dae12284acb165c37a9e39cd9753cbc537e')">289</span></td>
+                              </tr><tr>
+                            <td id="2786_title" style="padding-left:15px;">Gstr-1 Quarterly Return(upto 1.5 Cr)</td>
+                            <td id="2786_wip" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,2786,'wip','Gstr-1+Quarterly+Return%28upto+1.5+Cr%29','146b5dae12284acb165c37a9e39cd9753cbc537e')">18</span></td>
+                            <td id="2786_overdue" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,2786,'overdue','Gstr-1+Quarterly+Return%28upto+1.5+Cr%29','146b5dae12284acb165c37a9e39cd9753cbc537e')">0</span></td>
+                            <td id="2786_completed" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,2786,'completed','Gstr-1+Quarterly+Return%28upto+1.5+Cr%29','146b5dae12284acb165c37a9e39cd9753cbc537e')">8</span></td>
+                            <td id="2786_all" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,2786,'all','Gstr-1+Quarterly+Return%28upto+1.5+Cr%29','146b5dae12284acb165c37a9e39cd9753cbc537e')">26</span></td>
+                          </tr><tr>
+                            <td id="2787_title" style="padding-left:15px;">Gstr-1 Monthly Return(above 1.5 Cr)</td>
+                            <td id="2787_wip" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,2787,'wip','Gstr-1+Monthly+Return%28above+1.5+Cr%29','146b5dae12284acb165c37a9e39cd9753cbc537e')">1</span></td>
+                            <td id="2787_overdue" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,2787,'overdue','Gstr-1+Monthly+Return%28above+1.5+Cr%29','146b5dae12284acb165c37a9e39cd9753cbc537e')">103</span></td>
+                            <td id="2787_completed" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,2787,'completed','Gstr-1+Monthly+Return%28above+1.5+Cr%29','146b5dae12284acb165c37a9e39cd9753cbc537e')">4</span></td>
+                            <td id="2787_all" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,2787,'all','Gstr-1+Monthly+Return%28above+1.5+Cr%29','146b5dae12284acb165c37a9e39cd9753cbc537e')">108</span></td>
+                          </tr><tr>
+                            <td id="2504_title" style="padding-left:15px;">Gst Registration</td>
+                            <td id="2504_wip" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,2504,'wip','Gst+Registration','146b5dae12284acb165c37a9e39cd9753cbc537e')">0</span></td>
+                            <td id="2504_overdue" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,2504,'overdue','Gst+Registration','146b5dae12284acb165c37a9e39cd9753cbc537e')">2</span></td>
+                            <td id="2504_completed" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,2504,'completed','Gst+Registration','146b5dae12284acb165c37a9e39cd9753cbc537e')">3</span></td>
+                            <td id="2504_all" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,2504,'all','Gst+Registration','146b5dae12284acb165c37a9e39cd9753cbc537e')">5</span></td>
+                          </tr><tr>
+                            <td id="10522_title" style="padding-left:15px;">Gst Annual Return</td>
+                            <td id="10522_wip" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,10522,'wip','Gst+Annual+Return','146b5dae12284acb165c37a9e39cd9753cbc537e')">0</span></td>
+                            <td id="10522_overdue" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,10522,'overdue','Gst+Annual+Return','146b5dae12284acb165c37a9e39cd9753cbc537e')">1</span></td>
+                            <td id="10522_completed" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,10522,'completed','Gst+Annual+Return','146b5dae12284acb165c37a9e39cd9753cbc537e')">0</span></td>
+                            <td id="10522_all" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,10522,'all','Gst+Annual+Return','146b5dae12284acb165c37a9e39cd9753cbc537e')">1</span></td>
+                          </tr><tr><th colspan="5">Income Tax</th></tr><tr>
+                                <td id="759_title" style="padding-left:15px;padding-right:15px;">Tds Returns 26q</td>
+                                <td id="759_wip" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,759,'wip','Tds+Returns+26q','146b5dae12284acb165c37a9e39cd9753cbc537e')">98</span></td>
+                                <td id="759_overdue" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,759,'overdue','Tds+Returns+26q','146b5dae12284acb165c37a9e39cd9753cbc537e')">49</span></td>
+                                <td id="759_completed" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,759,'completed','Tds+Returns+26q','146b5dae12284acb165c37a9e39cd9753cbc537e')">5</span></td>
+                                <td id="759_all" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,759,'all','Tds+Returns+26q','146b5dae12284acb165c37a9e39cd9753cbc537e')">152</span></td>
+                              </tr><tr>
+                            <td id="764_title" style="padding-left:15px;">Itr July</td>
+                            <td id="764_wip" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,764,'wip','Itr+July','146b5dae12284acb165c37a9e39cd9753cbc537e')">21</span></td>
+                            <td id="764_overdue" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,764,'overdue','Itr+July','146b5dae12284acb165c37a9e39cd9753cbc537e')">0</span></td>
+                            <td id="764_completed" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,764,'completed','Itr+July','146b5dae12284acb165c37a9e39cd9753cbc537e')">1</span></td>
+                            <td id="764_all" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,764,'all','Itr+July','146b5dae12284acb165c37a9e39cd9753cbc537e')">22</span></td>
+                          </tr><tr>
+                            <td id="18507_title" style="padding-left:15px;">Itr Acknowledgement</td>
+                            <td id="18507_wip" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,18507,'wip','Itr+Acknowledgement','146b5dae12284acb165c37a9e39cd9753cbc537e')">9</span></td>
+                            <td id="18507_overdue" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,18507,'overdue','Itr+Acknowledgement','146b5dae12284acb165c37a9e39cd9753cbc537e')">0</span></td>
+                            <td id="18507_completed" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,18507,'completed','Itr+Acknowledgement','146b5dae12284acb165c37a9e39cd9753cbc537e')">0</span></td>
+                            <td id="18507_all" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,18507,'all','Itr+Acknowledgement','146b5dae12284acb165c37a9e39cd9753cbc537e')">9</span></td>
+                          </tr><tr>
+                            <td id="765_title" style="padding-left:15px;">Individual Return Itr -2</td>
+                            <td id="765_wip" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,765,'wip','Individual+Return+Itr+-2','146b5dae12284acb165c37a9e39cd9753cbc537e')">4</span></td>
+                            <td id="765_overdue" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,765,'overdue','Individual+Return+Itr+-2','146b5dae12284acb165c37a9e39cd9753cbc537e')">0</span></td>
+                            <td id="765_completed" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,765,'completed','Individual+Return+Itr+-2','146b5dae12284acb165c37a9e39cd9753cbc537e')">0</span></td>
+                            <td id="765_all" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,765,'all','Individual+Return+Itr+-2','146b5dae12284acb165c37a9e39cd9753cbc537e')">4</span></td>
+                          </tr><tr>
+                            <td id="760_title" style="padding-left:15px;">Pan /tan Application</td>
+                            <td id="760_wip" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,760,'wip','Pan+%2Ftan+Application','146b5dae12284acb165c37a9e39cd9753cbc537e')">0</span></td>
+                            <td id="760_overdue" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,760,'overdue','Pan+%2Ftan+Application','146b5dae12284acb165c37a9e39cd9753cbc537e')">9</span></td>
+                            <td id="760_completed" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,760,'completed','Pan+%2Ftan+Application','146b5dae12284acb165c37a9e39cd9753cbc537e')">8</span></td>
+                            <td id="760_all" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,760,'all','Pan+%2Ftan+Application','146b5dae12284acb165c37a9e39cd9753cbc537e')">17</span></td>
+                          </tr><tr>
+                            <td id="17109_title" style="padding-left:15px;">Individual Returns Itr 1</td>
+                            <td id="17109_wip" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,17109,'wip','Individual+Returns+Itr+1','146b5dae12284acb165c37a9e39cd9753cbc537e')">0</span></td>
+                            <td id="17109_overdue" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,17109,'overdue','Individual+Returns+Itr+1','146b5dae12284acb165c37a9e39cd9753cbc537e')">1</span></td>
+                            <td id="17109_completed" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,17109,'completed','Individual+Returns+Itr+1','146b5dae12284acb165c37a9e39cd9753cbc537e')">0</span></td>
+                            <td id="17109_all" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,17109,'all','Individual+Returns+Itr+1','146b5dae12284acb165c37a9e39cd9753cbc537e')">1</span></td>
+                          </tr><tr>
+                            <td id="761_title" style="padding-left:15px;">Advance Tax Calculation</td>
+                            <td id="761_wip" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,761,'wip','Advance+Tax+Calculation','146b5dae12284acb165c37a9e39cd9753cbc537e')">0</span></td>
+                            <td id="761_overdue" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,761,'overdue','Advance+Tax+Calculation','146b5dae12284acb165c37a9e39cd9753cbc537e')">5</span></td>
+                            <td id="761_completed" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,761,'completed','Advance+Tax+Calculation','146b5dae12284acb165c37a9e39cd9753cbc537e')">6</span></td>
+                            <td id="761_all" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,761,'all','Advance+Tax+Calculation','146b5dae12284acb165c37a9e39cd9753cbc537e')">11</span></td>
+                          </tr><tr>
+                            <td id="17110_title" style="padding-left:15px;">Individual Returns Itr 2</td>
+                            <td id="17110_wip" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,17110,'wip','Individual+Returns+Itr+2','146b5dae12284acb165c37a9e39cd9753cbc537e')">0</span></td>
+                            <td id="17110_overdue" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,17110,'overdue','Individual+Returns+Itr+2','146b5dae12284acb165c37a9e39cd9753cbc537e')">1</span></td>
+                            <td id="17110_completed" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,17110,'completed','Individual+Returns+Itr+2','146b5dae12284acb165c37a9e39cd9753cbc537e')">0</span></td>
+                            <td id="17110_all" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,17110,'all','Individual+Returns+Itr+2','146b5dae12284acb165c37a9e39cd9753cbc537e')">1</span></td>
+                          </tr><tr>
+                            <td id="762_title" style="padding-left:15px;">Scrutiny Assessment</td>
+                            <td id="762_wip" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,762,'wip','Scrutiny+Assessment','146b5dae12284acb165c37a9e39cd9753cbc537e')">0</span></td>
+                            <td id="762_overdue" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,762,'overdue','Scrutiny+Assessment','146b5dae12284acb165c37a9e39cd9753cbc537e')">2</span></td>
+                            <td id="762_completed" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,762,'completed','Scrutiny+Assessment','146b5dae12284acb165c37a9e39cd9753cbc537e')">1</span></td>
+                            <td id="762_all" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,762,'all','Scrutiny+Assessment','146b5dae12284acb165c37a9e39cd9753cbc537e')">3</span></td>
+                          </tr><tr>
+                            <td id="767_title" style="padding-left:15px;">Partner Of Partnership Firm Itr 3</td>
+                            <td id="767_wip" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,767,'wip','Partner+Of+Partnership+Firm+Itr+3','146b5dae12284acb165c37a9e39cd9753cbc537e')">0</span></td>
+                            <td id="767_overdue" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,767,'overdue','Partner+Of+Partnership+Firm+Itr+3','146b5dae12284acb165c37a9e39cd9753cbc537e')">0</span></td>
+                            <td id="767_completed" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,767,'completed','Partner+Of+Partnership+Firm+Itr+3','146b5dae12284acb165c37a9e39cd9753cbc537e')">1</span></td>
+                            <td id="767_all" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,767,'all','Partner+Of+Partnership+Firm+Itr+3','146b5dae12284acb165c37a9e39cd9753cbc537e')">1</span></td>
+                          </tr><tr>
+                            <td id="763_title" style="padding-left:15px;">Cit/itat Appeals</td>
+                            <td id="763_wip" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,763,'wip','Cit%2Fitat+Appeals','146b5dae12284acb165c37a9e39cd9753cbc537e')">0</span></td>
+                            <td id="763_overdue" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,763,'overdue','Cit%2Fitat+Appeals','146b5dae12284acb165c37a9e39cd9753cbc537e')">1</span></td>
+                            <td id="763_completed" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,763,'completed','Cit%2Fitat+Appeals','146b5dae12284acb165c37a9e39cd9753cbc537e')">1</span></td>
+                            <td id="763_all" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,763,'all','Cit%2Fitat+Appeals','146b5dae12284acb165c37a9e39cd9753cbc537e')">2</span></td>
+                          </tr><tr><th colspan="5">Internal Audit</th></tr><tr>
+                                <td id="1005_title" style="padding-left:15px;padding-right:15px;">Internal Audit Plan - Ii</td>
+                                <td id="1005_wip" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,1005,'wip','Internal+Audit+Plan+-+Ii','146b5dae12284acb165c37a9e39cd9753cbc537e')">0</span></td>
+                                <td id="1005_overdue" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,1005,'overdue','Internal+Audit+Plan+-+Ii','146b5dae12284acb165c37a9e39cd9753cbc537e')">1</span></td>
+                                <td id="1005_completed" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,1005,'completed','Internal+Audit+Plan+-+Ii','146b5dae12284acb165c37a9e39cd9753cbc537e')">1</span></td>
+                                <td id="1005_all" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,1005,'all','Internal+Audit+Plan+-+Ii','146b5dae12284acb165c37a9e39cd9753cbc537e')">2</span></td>
+                              </tr><tr><th colspan="5">RBI</th></tr><tr>
+                                <td id="10495_title" style="padding-left:15px;padding-right:15px;">Fema - Fc - Gpr</td>
+                                <td id="10495_wip" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,10495,'wip','Fema+-+Fc+-+Gpr','146b5dae12284acb165c37a9e39cd9753cbc537e')">0</span></td>
+                                <td id="10495_overdue" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,10495,'overdue','Fema+-+Fc+-+Gpr','146b5dae12284acb165c37a9e39cd9753cbc537e')">0</span></td>
+                                <td id="10495_completed" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,10495,'completed','Fema+-+Fc+-+Gpr','146b5dae12284acb165c37a9e39cd9753cbc537e')">1</span></td>
+                                <td id="10495_all" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,10495,'all','Fema+-+Fc+-+Gpr','146b5dae12284acb165c37a9e39cd9753cbc537e')">1</span></td>
+                              </tr><tr><th colspan="5">SHOP &amp; ESTABLISHMENT ACT</th></tr><tr>
+                                <td id="15614_title" style="padding-left:15px;padding-right:15px;">Form D</td>
+                                <td id="15614_wip" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,15614,'wip','Form+D','146b5dae12284acb165c37a9e39cd9753cbc537e')">0</span></td>
+                                <td id="15614_overdue" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,15614,'overdue','Form+D','146b5dae12284acb165c37a9e39cd9753cbc537e')">0</span></td>
+                                <td id="15614_completed" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,15614,'completed','Form+D','146b5dae12284acb165c37a9e39cd9753cbc537e')">1</span></td>
+                                <td id="15614_all" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,15614,'all','Form+D','146b5dae12284acb165c37a9e39cd9753cbc537e')">1</span></td>
+                              </tr><tr><th colspan="5">Statutory Audit</th></tr><tr>
+                                <td id="15837_title" style="padding-left:15px;padding-right:15px;">Statutory Audit (above 25 Cr)</td>
+                                <td id="15837_wip" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,15837,'wip','Statutory+Audit+%28above+25+Cr%29','146b5dae12284acb165c37a9e39cd9753cbc537e')">6</span></td>
+                                <td id="15837_overdue" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,15837,'overdue','Statutory+Audit+%28above+25+Cr%29','146b5dae12284acb165c37a9e39cd9753cbc537e')">0</span></td>
+                                <td id="15837_completed" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,15837,'completed','Statutory+Audit+%28above+25+Cr%29','146b5dae12284acb165c37a9e39cd9753cbc537e')">1</span></td>
+                                <td id="15837_all" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,15837,'all','Statutory+Audit+%28above+25+Cr%29','146b5dae12284acb165c37a9e39cd9753cbc537e')">7</span></td>
+                              </tr><tr>
+                            <td id="20272_title" style="padding-left:15px;">Statutory Audit - Banks</td>
+                            <td id="20272_wip" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,20272,'wip','Statutory+Audit+-+Banks','146b5dae12284acb165c37a9e39cd9753cbc537e')">1</span></td>
+                            <td id="20272_overdue" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,20272,'overdue','Statutory+Audit+-+Banks','146b5dae12284acb165c37a9e39cd9753cbc537e')">0</span></td>
+                            <td id="20272_completed" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,20272,'completed','Statutory+Audit+-+Banks','146b5dae12284acb165c37a9e39cd9753cbc537e')">0</span></td>
+                            <td id="20272_all" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,20272,'all','Statutory+Audit+-+Banks','146b5dae12284acb165c37a9e39cd9753cbc537e')">1</span></td>
+                          </tr><tr>
+                            <td id="1007_title" style="padding-left:15px;">Statutory Audit</td>
+                            <td id="1007_wip" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,1007,'wip','Statutory+Audit','146b5dae12284acb165c37a9e39cd9753cbc537e')">0</span></td>
+                            <td id="1007_overdue" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,1007,'overdue','Statutory+Audit','146b5dae12284acb165c37a9e39cd9753cbc537e')">1</span></td>
+                            <td id="1007_completed" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,1007,'completed','Statutory+Audit','146b5dae12284acb165c37a9e39cd9753cbc537e')">0</span></td>
+                            <td id="1007_all" style="text-align: right; padding-right: 15px; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(73, 91, 121);" class="data_cell"><span onclick="getTaskListN(this,1007,'all','Statutory+Audit','146b5dae12284acb165c37a9e39cd9753cbc537e')">1</span></td>
+                          </tr>            </tbody>
+        </table>
+								</div>
+							</div>
+						</div>
+	
+				<div class="col-6">
+							<div class="card">
+							<div class=" well" id="task-list-container" style="background-color:#FCFCFC;">
+        <div class="" id="task-data"><div class="row">
+    <div class="col-md-7">
+        <h6>Showing <b>All 38</b> Task(s) of Accounting</h6>
+        <input type="hidden" id="result_for" value="ACCOUNTING">
+    </div>
+    <div class="col-sm-5">
+      <input type="text" id="searchInput" onkeyup="searchTaskN('taskTableN','searchInput',1)" placeholder="Search Customer..." class="form-control"> <br>
+    </div>
+
+</div> 
+
+<style>
+
+
+.checkbox label:after {
+  /* content: '';
+   display: table;
+   clear: both;*/
+   }
+   .checkbox .cr {
+   position: relative;
+   display: inline-block;
+   border: 1px solid #a9a9a9;
+   border-radius: .25em;
+   width: 1.3em;
+   height: 1.3em;
+   float: left;
+   /*margin-right: .5em;*/
+   }
+   .checkbox .cr .cr-icon {
+   position: absolute;
+   font-size: .8em;
+   line-height: 0;
+   top: 50%;
+   left: 15%;
+   }
+   .checkbox label input[type="checkbox"] {
+   display: none;
+   }
+   .checkbox label input[type="checkbox"]+.cr>.cr-icon {
+   opacity: 0;
+   }
+   .checkbox label input[type="checkbox"]:checked+.cr>.cr-icon {
+   opacity: 1;
+   }
+   .checkbox label input[type="checkbox"]:disabled+.cr {
+   opacity: .5;
+   }
+   
+   .not-active {
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+  color: black;
+}
+
+</style>
+<div class="tableFixHead" id="table_data">
+<table class="table table-hover table-condensed todo-table" style="table-layout:fixed;" id="taskTableN">
+<thead>
+    <tr><th width="2%"></th>
+    <th width="30%"></th>
+    <th width="27%">Status</th>
+    <th width="15%">Due date</th>
+    <!--<th width="15%">Hrs.</th>-->
+    <th width="12%">Progress</th>
+    <th width="8%"></th>
+</tr></thead>
+<tbody>
+                <script>
+                 $(function() {
+                    var datepickerSelector_startdate_billing0 = '.datepick0';
+                     $(datepickerSelector_startdate_billing0).each(function() {
+                    $(this).datepicker({
+                       showOtherMonths: true,
+                       selectOtherMonths: true,
+                       dateFormat: "dd M yy",
+                       minDate: '0',
+                       yearRange: '-1:+1'
+                    }).prev('.btn').on('click', function(e) {
+                       e && e.preventDefault();
+                       $(this).focus();
+                    });
+                    $("#due_date_0").on('change keyup paste', function() {
+                             var change_date = $("#due_date_0").val();
+                             $("#work_id").val(1003);
+                             $("#acc_task").val(90387);
+                             $("#acc_date").val(change_date);
+                             $("#end_date").val('2020-04-23');
+                             $("#current_date").html("23 Apr 2020");
+                             $("#new_date").html(change_date);
+                             $("#checkbox_label").html("Apply to all customers in ACCOUNTING for the month April - 20-21");
+                             $("#duedatechange-modal").modal({show:true});
+                             $("#main_form").removeClass("hidden");
+                       $("#button_date").removeClass("hidden"); 
+                       $("#success_msg").addClass("hidden");
+                                
+                       });
+                       });
+                    });
+                </script>
+        
+                <tr><th style="color:#495b79;" colspan="6"> 
+                              <span class="checkbox" style="margin:0px;padding:0px;margin-right:0px;">
+                       
+                            &nbsp;&nbsp;BIPIN SINGH &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                            <select class="custom-select mb-3">
+                                <option value="">Action</option>
+                                  <option value="1">Re-assign</option><option value="2">Close Multiple task(s)</option><option value="5">Assign Reviewer</option><option value="3">Submit for review</option>
+                          </select><input type="hidden" id="tasks_4156" value=""></span></th>
+                          </tr>
+               <tr class="" id="90387" title="Accounting  2020 - 2021 ">
+                    <td class="">
+                                            </td>
+                                        <td style="padding-left:15px;">
+                                            <a href="javascript:void(0);" onclick="ViewTaskDetails(90387)" title="" style="color:#;text-decoration:none;white-space: nowrap; width: 150px; overflow: hidden;text-overflow: ellipsis;  display: block;">
+                        &nbsp;</a>
+                                        
+                                          
+                     <span class="text-muted"><span id="span_hrs_spent_90387">01.30</span> / 10.00 hrs.</span>                     <br><span class="text-muted">Assigned by:<br><span style="font-size: 11px;">Vaidehi Karn</span></span>                     
+                    
+                    </td>
+                    
+                    <td>
+                                                <ul style="padding-left:1px;" id="90387~1003">
+                            <li class="dropdown" style="list-style: none;">
+                                <a href="#" class="dropdown-toggle" title="Sr. Review Complete" style="white-space: nowrap; width: 150px; overflow: hidden;text-overflow: ellipsis;  display: block;" data-toggle="dropdown"><span id="90387_1003_a">Sr. Review Complete</span> <b class="caret"></b> </a>
+                                <ul class="dropdown-menu"><li><a onclick="fetch_select(this,286);">Pending From Client Side</a></li><li><a onclick="fetch_select(this,287);">Details Received but Work Not Started</a></li><li><a onclick="fetch_select(this,288);">Work In Progress</a></li><li><a onclick="fetch_select(this,289);">Task Under Review</a></li><li><a onclick="fetch_select(this,2132);">SOM STAUS</a></li><li><a onclick="fetch_select(this,290);">Pending Sr. Review</a></li><li><a onclick="fetch_select(this,291);">Sr. Review Complete</a></li><li><a onclick="fetch_select(this,292);">Task Complete</a></li><li><a onclick="fetch_select(this,293);">Task Billed</a></li><li><a onclick="fetch_select(this,294);">Payment Pending</a></li><li><a onclick="fetch_select(this,295);">Payment Received</a></li><li><a onclick="fetch_select(this,316);">Details Not Received (Work Not Started)</a></li></ul>                            </li>
+                        </ul>
+                        <span class="text-muted">Assigned on:<br><span style="font-size: 11px;">21 Apr 2020 12 03 PM</span></span>
+                    </td>
+                  
+                    <td style="text-color:;">
+                      23 Apr 2020                                            </td>
+                
+                    
+                    <td>
+                        <div class="progress progress-mini" style="width:40px;display:inline-block;margin: 0px 0px" id="progress_90387">
+                <div class="progress-bar three-sec-ease-in-out progress-bar-warning" aria-valuetransitiongoal="40" aria-valuenow="40" style="width: 40%;"></div>
+              </div>&nbsp;
+                            <br><span id="review_90387"></span>                    </td>
+                    <td class="">
+                        
+                        <span class="label bg-seagreen text-white">Closed</span>                        <br>
+                                          </td>
+                </tr>
+                                
+                            <script>
+                 $(function() {
+                    var datepickerSelector_startdate_billing1 = '.datepick1';
+                     $(datepickerSelector_startdate_billing1).each(function() {
+                    $(this).datepicker({
+                       showOtherMonths: true,
+                       selectOtherMonths: true,
+                       dateFormat: "dd M yy",
+                       minDate: '0',
+                       yearRange: '-1:+1'
+                    }).prev('.btn').on('click', function(e) {
+                       e && e.preventDefault();
+                       $(this).focus();
+                    });
+                    $("#due_date_1").on('change keyup paste', function() {
+                             var change_date = $("#due_date_1").val();
+                             $("#work_id").val(1003);
+                             $("#acc_task").val(84038);
+                             $("#acc_date").val(change_date);
+                             $("#end_date").val('1970-01-01');
+                             $("#current_date").html("01 Jan 1970");
+                             $("#new_date").html(change_date);
+                             $("#checkbox_label").html("Apply to all customers in ACCOUNTING for the month January - 20-21");
+                             $("#duedatechange-modal").modal({show:true});
+                             $("#main_form").removeClass("hidden");
+                       $("#button_date").removeClass("hidden"); 
+                       $("#success_msg").addClass("hidden");
+                                
+                       });
+                       });
+                    });
+                </script>
+        
+                
+               <tr class="" id="84038" title="Accounting">
+                    <td class="">
+                                            </td>
+                                        <td style="padding-left:15px;">
+                                            <a href="javascript:void(0);" onclick="ViewTaskDetails(84038)" title="Abhinav Sinha" style="color:#;text-decoration:none;white-space: nowrap; width: 150px; overflow: hidden;text-overflow: ellipsis;  display: block;">
+                        Abhinav Sinha&nbsp;</a>
+                                        
+                                          
+                     <span class="text-muted"><span id="span_hrs_spent_84038">0</span> / 2.00 hrs.</span>                     <br><span class="text-muted"></span>                     
+                    
+                    </td>
+                    
+                    <td>
+                                                <ul style="padding-left:1px;" id="84038~1003">
+                            <li class="dropdown" style="list-style: none;">
+                                <a href="#" class="dropdown-toggle" title="Pending From Client Side" style="white-space: nowrap; width: 150px; overflow: hidden;text-overflow: ellipsis;  display: block;" data-toggle="dropdown"><span id="84038_1003_a">Pending From Client Side</span> <b class="caret"></b> </a>
+                                <ul class="dropdown-menu"><li><a onclick="fetch_select(this,286);">Pending From Client Side</a></li><li><a onclick="fetch_select(this,287);">Details Received but Work Not Started</a></li><li><a onclick="fetch_select(this,288);">Work In Progress</a></li><li><a onclick="fetch_select(this,289);">Task Under Review</a></li><li><a onclick="fetch_select(this,2132);">SOM STAUS</a></li><li><a onclick="fetch_select(this,290);">Pending Sr. Review</a></li><li><a onclick="fetch_select(this,291);">Sr. Review Complete</a></li><li><a onclick="fetch_select(this,292);">Task Complete</a></li><li><a onclick="fetch_select(this,293);">Task Billed</a></li><li><a onclick="fetch_select(this,294);">Payment Pending</a></li><li><a onclick="fetch_select(this,295);">Payment Received</a></li><li><a onclick="fetch_select(this,316);">Details Not Received (Work Not Started)</a></li></ul>                            </li>
+                        </ul>
+                        <span class="text-muted">Assigned on:<br><span style="font-size: 11px;">02 Apr 2020 08 03 PM</span></span>
+                    </td>
+                  
+                    <td style="text-color:;">
+                      01 Jan 1970                        <br><span class="text-muted">Assigned for: <span style="font-size: 11px;"> 03 Apr (20-21)</span></span>                    </td>
+                
+                    
+                    <td>
+                        <div class="progress progress-mini" style="width:40px;display:inline-block;margin: 0px 0px" id="progress_84038">
+                <div class="progress-bar three-sec-ease-in-out progress-bar-danger" aria-valuetransitiongoal="0" aria-valuenow="0" style="width: 0%;"></div>
+              </div>&nbsp;
+                            <br><span id="review_84038"></span>                    </td>
+                    <td class="">
+                        
+                        <span class="label bg-seagreen text-white">Closed</span>                        <br>
+                                                <br><span class="text-white label label-primary" style="font-size: 11px;"><i class="fa fa-file-text-o"></i> 1</span>
+                        
+                                          </td>
+                </tr>
+                                
+                            <script>
+                 $(function() {
+                    var datepickerSelector_startdate_billing2 = '.datepick2';
+                     $(datepickerSelector_startdate_billing2).each(function() {
+                    $(this).datepicker({
+                       showOtherMonths: true,
+                       selectOtherMonths: true,
+                       dateFormat: "dd M yy",
+                       minDate: '0',
+                       yearRange: '-1:+1'
+                    }).prev('.btn').on('click', function(e) {
+                       e && e.preventDefault();
+                       $(this).focus();
+                    });
+                    $("#due_date_2").on('change keyup paste', function() {
+                             var change_date = $("#due_date_2").val();
+                             $("#work_id").val(1003);
+                             $("#acc_task").val(98080);
+                             $("#acc_date").val(change_date);
+                             $("#end_date").val('2020-07-03');
+                             $("#current_date").html("03 Jul 2020");
+                             $("#new_date").html(change_date);
+                             $("#checkbox_label").html("Apply to all customers in ACCOUNTING for the month July - 20-21");
+                             $("#duedatechange-modal").modal({show:true});
+                             $("#main_form").removeClass("hidden");
+                       $("#button_date").removeClass("hidden"); 
+                       $("#success_msg").addClass("hidden");
+                                
+                       });
+                       });
+                    });
+                </script>
+        
+                
+               <tr class="" id="98080" title="Accounting">
+                    <td class="">
+                                            </td>
+                                        <td style="padding-left:15px;">
+                                            <a href="javascript:void(0);" onclick="ViewTaskDetails(98080)" title="Abhinav Sinha" style="color:#;text-decoration:none;white-space: nowrap; width: 150px; overflow: hidden;text-overflow: ellipsis;  display: block;">
+                        Abhinav Sinha&nbsp;</a>
+                                        
+                                          
+                     <span class="text-muted"><span id="span_hrs_spent_98080">01.00</span> / 2.00 hrs.</span>                     <br><span class="text-muted"></span>                     
+                    
+                    </td>
+                    
+                    <td>
+                                                <ul style="padding-left:1px;" id="98080~1003">
+                            <li class="dropdown" style="list-style: none;">
+                                <a href="#" class="dropdown-toggle" title="Pending From Client Side" style="white-space: nowrap; width: 150px; overflow: hidden;text-overflow: ellipsis;  display: block;" data-toggle="dropdown"><span id="98080_1003_a">Pending From Client Side</span> <b class="caret"></b> </a>
+                                <ul class="dropdown-menu"><li><a onclick="fetch_select(this,286);">Pending From Client Side</a></li><li><a onclick="fetch_select(this,287);">Details Received but Work Not Started</a></li><li><a onclick="fetch_select(this,288);">Work In Progress</a></li><li><a onclick="fetch_select(this,289);">Task Under Review</a></li><li><a onclick="fetch_select(this,2132);">SOM STAUS</a></li><li><a onclick="fetch_select(this,290);">Pending Sr. Review</a></li><li><a onclick="fetch_select(this,291);">Sr. Review Complete</a></li><li><a onclick="fetch_select(this,292);">Task Complete</a></li><li><a onclick="fetch_select(this,293);">Task Billed</a></li><li><a onclick="fetch_select(this,294);">Payment Pending</a></li><li><a onclick="fetch_select(this,295);">Payment Received</a></li><li><a onclick="fetch_select(this,316);">Details Not Received (Work Not Started)</a></li></ul>                            </li>
+                        </ul>
+                        <span class="text-muted">Assigned on:<br><span style="font-size: 11px;">17 May 2020 12 27 PM</span></span>
+                    </td>
+                  
+                    <td style="text-color:;">
+                      03 Jul 2020                        <br><span class="text-muted">Assigned for: <span style="font-size: 11px;"> 03 Jul (20-21)</span></span>                    </td>
+                
+                    
+                    <td>
+                        <div class="progress progress-mini" style="width:40px;display:inline-block;margin: 0px 0px" id="progress_98080">
+                <div class="progress-bar three-sec-ease-in-out progress-bar-info" aria-valuetransitiongoal="53" aria-valuenow="53" style="width: 53%;"></div>
+              </div>&nbsp;
+                            <br><span id="review_98080"><br><span class="text-white label bg-success" style="font-size: 10px;">Closed </span></span>                    </td>
+                    <td class="">
+                        
+                        <span class="label bg-seagreen text-white">Closed</span>                        <br>
+                                                <br><span class="text-white label label-primary" style="font-size: 11px;"><i class="fa fa-file-text-o"></i> 1</span>
+                        
+                                          </td>
+                </tr>
+                                
+                            <script>
+                 $(function() {
+                    var datepickerSelector_startdate_billing3 = '.datepick3';
+                     $(datepickerSelector_startdate_billing3).each(function() {
+                    $(this).datepicker({
+                       showOtherMonths: true,
+                       selectOtherMonths: true,
+                       dateFormat: "dd M yy",
+                       minDate: '0',
+                       yearRange: '-1:+1'
+                    }).prev('.btn').on('click', function(e) {
+                       e && e.preventDefault();
+                       $(this).focus();
+                    });
+                    $("#due_date_3").on('change keyup paste', function() {
+                             var change_date = $("#due_date_3").val();
+                             $("#work_id").val(1003);
+                             $("#acc_task").val(84044);
+                             $("#acc_date").val(change_date);
+                             $("#end_date").val('1970-01-01');
+                             $("#current_date").html("01 Jan 1970");
+                             $("#new_date").html(change_date);
+                             $("#checkbox_label").html("Apply to all customers in ACCOUNTING for the month January - 20-21");
+                             $("#duedatechange-modal").modal({show:true});
+                             $("#main_form").removeClass("hidden");
+                       $("#button_date").removeClass("hidden"); 
+                       $("#success_msg").addClass("hidden");
+                                
+                       });
+                       });
+                    });
+                </script>
+        
+                
+               <tr class="" id="84044" title="Accounting">
+                    <td class="">
+                                            </td>
+                                        <td style="padding-left:15px;">
+                                            <a href="javascript:void(0);" onclick="ViewTaskDetails(84044)" title="AMIT CHAOUDHARY" style="color:#;text-decoration:none;white-space: nowrap; width: 150px; overflow: hidden;text-overflow: ellipsis;  display: block;">
+                        Amit Chaoudhary&nbsp;</a>
+                                        
+                                          
+                     <span class="text-muted"><span id="span_hrs_spent_84044">0</span> / 2.00 hrs.</span>                     <br><span class="text-muted"></span>                     
+                    
+                    </td>
+                    
+                    <td>
+                                                <ul style="padding-left:1px;" id="84044~1003">
+                            <li class="dropdown" style="list-style: none;">
+                                <a href="#" class="dropdown-toggle" title="No Updates" style="white-space: nowrap; width: 150px; overflow: hidden;text-overflow: ellipsis;  display: block;" data-toggle="dropdown"><span id="84044_1003_a">No Updates</span> <b class="caret"></b> </a>
+                                <ul class="dropdown-menu"><li><a onclick="fetch_select(this,286);">Pending From Client Side</a></li></ul>                            </li>
+                        </ul>
+                        <span class="text-muted">Assigned on:<br><span style="font-size: 11px;">02 Apr 2020 08 03 PM</span></span>
+                    </td>
+                  
+                    <td style="text-color:;">
+                      01 Jan 1970                        <br><span class="text-muted">Assigned for: <span style="font-size: 11px;"> 03 Apr (20-21)</span></span>                    </td>
+                
+                    
+                    <td>
+                        <div class="progress progress-mini" style="width:40px;display:inline-block;margin: 0px 0px" id="progress_84044">
+                <div class="progress-bar three-sec-ease-in-out progress-bar-danger" aria-valuetransitiongoal="0" aria-valuenow="0" style="width: 0%;"></div>
+              </div>&nbsp;
+                            <br><span id="review_84044"></span>                    </td>
+                    <td class="">
+                        
+                        <span class="label bg-seagreen text-white">Closed</span>                        <br>
+                                          </td>
+                </tr>
+                                
+                            <script>
+                 $(function() {
+                    var datepickerSelector_startdate_billing4 = '.datepick4';
+                     $(datepickerSelector_startdate_billing4).each(function() {
+                    $(this).datepicker({
+                       showOtherMonths: true,
+                       selectOtherMonths: true,
+                       dateFormat: "dd M yy",
+                       minDate: '0',
+                       yearRange: '-1:+1'
+                    }).prev('.btn').on('click', function(e) {
+                       e && e.preventDefault();
+                       $(this).focus();
+                    });
+                    $("#due_date_4").on('change keyup paste', function() {
+                             var change_date = $("#due_date_4").val();
+                             $("#work_id").val(1003);
+                             $("#acc_task").val(92389);
+                             $("#acc_date").val(change_date);
+                             $("#end_date").val('2020-06-03');
+                             $("#current_date").html("03 Jun 2020");
+                             $("#new_date").html(change_date);
+                             $("#checkbox_label").html("Apply to all customers in ACCOUNTING for the month June - 20-21");
+                             $("#duedatechange-modal").modal({show:true});
+                             $("#main_form").removeClass("hidden");
+                       $("#button_date").removeClass("hidden"); 
+                       $("#success_msg").addClass("hidden");
+                                
+                       });
+                       });
+                    });
+                </script>
+        
+
+
+
+                                
+                      <input type="hidden" id="total_chk" value="38">
+          <input type="hidden" id="selected_tasks" value="">
+    </tbody>
+ </table>
+</div>
+
+
+</div>
+    </div>
+
+
+							</div>
+				</div>
+
+
+</div>
+
+
+</div>
+</div>
+
+
+			</main>
+
+			<footer class="footer">
+				<div class="container-fluid">
+					<div class="row text-muted">
+						<div class="col-6 text-left">
+							<p class="mb-0">
+								<a href="index.html" class="text-muted"><strong>OM Trade Links</strong></a> &copy;
+							</p>
+						</div>
+						<div class="col-6 text-right">
+							<ul class="list-inline">
+								<li class="list-inline-item">
+									<a class="text-muted" href="#">Support</a>
+								</li>
+								<li class="list-inline-item">
+									<a class="text-muted" href="#">Help Center</a>
+								</li>
+								<li class="list-inline-item">
+									<a class="text-muted" href="#">Privacy</a>
+								</li>
+								<li class="list-inline-item">
+									<a class="text-muted" href="#">Terms</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+
+	<script src="js/vendor.js"></script>
+	<script src="js/app.js"></script>
+
+	<script>
+		$(function() {
+			var ctx = document.getElementById('chartjs-dashboard-line').getContext("2d");
+			var gradient = ctx.createLinearGradient(0, 0, 0, 225);
+			gradient.addColorStop(0, 'rgba(215, 227, 244, 1)');
+			gradient.addColorStop(1, 'rgba(215, 227, 244, 0)');
+			// Line chart
+			new Chart(document.getElementById("chartjs-dashboard-line"), {
+				type: 'line',
+				data: {
+					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+					datasets: [{
+						label: "Sales ($)",
+						fill: true,
+						backgroundColor: gradient,
+						borderColor: window.theme.primary,
+						data: [
+							2115,
+							1562,
+							1584,
+							1892,
+							1587,
+							1923,
+							2566,
+							2448,
+							2805,
+							3438,
+							2917,
+							3327
+						]
+					}]
+				},
+				options: {
+					maintainAspectRatio: false,
+					legend: {
+						display: false
+					},
+					tooltips: {
+						intersect: false
+					},
+					hover: {
+						intersect: true
+					},
+					plugins: {
+						filler: {
+							propagate: false
+						}
+					},
+					scales: {
+						xAxes: [{
+							reverse: true,
+							gridLines: {
+								color: "rgba(0,0,0,0.0)"
+							}
+						}],
+						yAxes: [{
+							ticks: {
+								stepSize: 1000
+							},
+							display: true,
+							borderDash: [3, 3],
+							gridLines: {
+								color: "rgba(0,0,0,0.0)"
+							}
+						}]
+					}
+				}
+			});
+		});
+	</script>
+	<script>
+		$(function() {
+			// Pie chart
+			new Chart(document.getElementById("chartjs-dashboard-pie"), {
+				type: 'pie',
+				data: {
+					labels: ["Chrome", "Firefox", "IE"],
+					datasets: [{
+						data: [4306, 3801, 1689],
+						backgroundColor: [
+							window.theme.primary,
+							window.theme.warning,
+							window.theme.danger
+						],
+						borderWidth: 5
+					}]
+				},
+				options: {
+					responsive: !window.MSInputMethodContext,
+					maintainAspectRatio: false,
+					legend: {
+						display: false
+					},
+					cutoutPercentage: 75
+				}
+			});
+		});
+	</script>
+	<script>
+		$(function() {
+			// Bar chart
+			new Chart(document.getElementById("chartjs-dashboard-bar"), {
+				type: 'bar',
+				data: {
+					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+					datasets: [{
+						label: "This year",
+						backgroundColor: window.theme.primary,
+						borderColor: window.theme.primary,
+						hoverBackgroundColor: window.theme.primary,
+						hoverBorderColor: window.theme.primary,
+						data: [54, 67, 41, 55, 62, 45, 55, 73, 60, 76, 48, 79],
+						barPercentage: .75,
+						categoryPercentage: .5
+					}]
+				},
+				options: {
+					maintainAspectRatio: false,
+					legend: {
+						display: false
+					},
+					scales: {
+						yAxes: [{
+							gridLines: {
+								display: false
+							},
+							stacked: false,
+							ticks: {
+								stepSize: 20
+							}
+						}],
+						xAxes: [{
+							stacked: false,
+							gridLines: {
+								color: "transparent"
+							}
+						}]
+					}
+				}
+			});
+		});
+	</script>
+	<script>
+		$(function() {
+			$("#world_map").vectorMap({
+				map: "world_mill",
+				normalizeFunction: "polynomial",
+				hoverOpacity: .7,
+				hoverColor: false,
+				regionStyle: {
+					initial: {
+						fill: "#e3eaef"
+					}
+				},
+				markerStyle: {
+					initial: {
+						"r": 9,
+						"fill": window.theme.primary,
+						"fill-opacity": .95,
+						"stroke": "#fff",
+						"stroke-width": 7,
+						"stroke-opacity": .4
+					},
+					hover: {
+						"stroke": "#fff",
+						"fill-opacity": 1,
+						"stroke-width": 1.5
+					}
+				},
+				backgroundColor: "transparent",
+				zoomOnScroll: false,
+				markers: [{
+						latLng: [31.230391, 121.473701],
+						name: "Shanghai"
+					},
+					{
+						latLng: [28.704060, 77.102493],
+						name: "Delhi"
+					},
+					{
+						latLng: [6.524379, 3.379206],
+						name: "Lagos"
+					},
+					{
+						latLng: [35.689487, 139.691711],
+						name: "Tokyo"
+					},
+					{
+						latLng: [23.129110, 113.264381],
+						name: "Guangzhou"
+					},
+					{
+						latLng: [40.7127837, -74.0059413],
+						name: "New York"
+					},
+					{
+						latLng: [34.052235, -118.243683],
+						name: "Los Angeles"
+					},
+					{
+						latLng: [41.878113, -87.629799],
+						name: "Chicago"
+					},
+					{
+						latLng: [51.507351, -0.127758],
+						name: "London"
+					},
+					{
+						latLng: [40.416775, -3.703790],
+						name: "Madrid"
+					}
+				]
+			});
+			setTimeout(function() {
+				$(window).trigger('resize');
+			}, 250)
+		});
+	</script>
+	<script>
+		$(function() {
+			$('#datetimepicker-dashboard').datetimepicker({
+				inline: true,
+				sideBySide: false,
+				format: 'L'
+			});
+		});
+	</script>
+
+</body>
+
+</html>
